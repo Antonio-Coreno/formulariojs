@@ -7,31 +7,38 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <form method="GET" name="formulario" onsubmit="return validar(this)">
+    <div class="">
+    <form class="formulario" method="GET" name="formulario" onsubmit="return validar(this)">
         <br>
-        <input type="text" name="nombre" size="20" placeholder="Nombre:" required>
-        <br>
-        <input type="text" name="edad" size="20" placeholder="Edad:">
-        <br>
-        <input type="email" name="email" size="20" placeholder="Correo electronico:">
-        <br>
-        <input type="reset" value="Limpiar" name="limpiar">
-        <input type="submit" value="Enviar" name="enviar">
     
+        <input class="label" type="text" name="nombre" size="20" placeholder="Nombre:" required>
+        <br>
+        <input class="label" type="text" name="edad" size="20" placeholder="Edad:">
+        <br>
+        <input class="label" type="email" name="email" size="20" placeholder="Correo electronico:">
+        <br>
+        <input class="boton "type="reset" value="Limpiar" name="limpiar" onClick="(this.borrar())">
+        <input class="boton "type="submit" value="Enviar" name="enviar">
+  
     </form>
-    <table>
+    </div>
+    <div class="">
+    <table class="label">
         <th colspan="2">
-            Ejercicios de JS
+            <p class="label">Ejercicios de JS</p>
         </th>
         <tr>
-            <td>Ejercicio 1</td>
-            <td>Ejercicio 2</td>
-            <td>Ejercicio 3</td>
-            <td>Ejercicio 4</td>
-            <td>Ejercicio 5</td>    
-            <td>Ejercicio 6</td>
+        <div>
+            <td class="input"><a href="ejercicio1.html">Ejercicio 1</a></td>
+            <td class="input">Ejercicio 2</td>
+            <td class="input">Ejercicio 3</td>
+            <td class="input">Ejercicio 4</td>
+            <td class="input">Ejercicio 5</td>    
+         
+        </div>
         </tr>
     </table>
+</div>
     <script src="js/validar.js"></script>
 </body>
 </html>

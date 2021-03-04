@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" language="javascript" src="js/ejercicio1.js" ></script>
+    <title>Ejercicio 1 JS</title>
+</head>
+<body>
+    <form name="formulario">
+        <p>Problema:
+        Suponga que un individuo desea invertir su capital en un banco y desea
+        saber cuanto dinero ganara despues de un mes si el banco paga a razon
+        de 2% mensual.
+        </p>
+        <br>
+        <table align="center" border="0" >
+            <tr>
+                <td align="left" width="100"  >Introduce la cantidad a invertir:</td>
+                <td align="center" width="150" >
+                    <input type="text" class="input2" name="cantidad" onkeypress="return validarn(event)" >
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" class="boton" value="Interes" name="enviar" onClick="interes()" >
+                </td>
+            </tr>
+            <tr>
+                <td align="left" width="100">Su saldo total con interes al 2% es de:</td>
+                <td  align="center" width="150" >
+                    <input type="text" class="input2" name="sueldoti" id="cantidadi" readonly="readonly" 
+                    class="input_text" >
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" class="boton" value="Borrar" name="borrar" onclick="(borrar())" >
+                    <td class=""><a href="index.html">Inicio</a></td>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
